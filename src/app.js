@@ -9,6 +9,7 @@ const searchRoutes = require('./routes/search.routes');
 const notificationRoutes = require('./routes/notification.routes');
 const infoRoutes = require('./routes/info.routes');
 const priceRoutes = require('./routes/price.routes');
+const aiConfigRoutes = require('./routes/ai-config.routes');
 const adminRoutes = require('./routes/admin.routes');
 
 const app = express();
@@ -43,6 +44,7 @@ app.use('/api/search-history', searchRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/app-info', infoRoutes);
 app.use('/api/price', priceRoutes);
+app.use('/api/ai-config', aiConfigRoutes);
 
 // Admin dashboard facing routes
 app.use('/api/admin', adminRoutes);
